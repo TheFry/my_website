@@ -1,7 +1,7 @@
 body{
 	background-color: #0c0d12;
 	color: white;
-	font-size: 1.6em;
+	font-size: 16px;
 	margin: 0;
 	font-family: sans-serif;
 }
@@ -23,26 +23,32 @@ body{
 }
 
 
-#main{
+#main_flex{
 	display: flex;
 	flex-flow: row wrap;
 	text-align: center;
 	height: 100vh;
 }
 
+
+#main_flex div{
+	border: 1px green solid;
+}
+
+
 #resume_img{
 	max-height: 100vh;
-	max-width: 100%;
+	padding: 10px;
 	box-sizing: border-box;
 	margin: auto;
 }
 
-
+/*
 #resume_text{
 	box-sizing: border-box;
 	margin: auto;
 }
-
+*/
 
 @media(max-width: 600px){
 	body{
