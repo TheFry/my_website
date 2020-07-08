@@ -7,29 +7,45 @@ body{
 }
 
 
-
 .container{
 	width: 80%;
 	margin: auto;
-	overflow: hidden;
 	padding: 0;
 }
 
-#main{
+
+#main_header{
 	text-align: center;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	height: 100vh;
 }
+
+
+#main{
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	height: 100vh;
+}
+
+#resume_img{
+	max-height: 100vh;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+
+#resume_text{
+	box-sizing: border-box;
+	margin: auto;
+}
+
 
 @media(max-width: 600px){
 	body{
 		font-size: 1em;
 	}
 }
-
-
-
-
-
