@@ -25,14 +25,13 @@ body{
 
 #flex_container{
 	display: flex;
-	min-height: 100vh;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 
 #resume_img_box{
-	flex-basis: 40;
+	border: 1px green solid;
 }
 
 
@@ -42,33 +41,48 @@ body{
 
 
 #resume_txt_box{
-	text-align: center;
-	flex-basis: 35%;
-	margin-left: 20px;
+	border: 1px green solid;
+	line-height: 3;
+	font-size: 2em;
+	margin-left: 10%;
 }
+
+
+#resume_txt_box ul{
+	list-style-type: none;
+	padding: 0;
+}
+
 
 #resume_txt_box a{
 	text-decoration: none;
-	font-size: 2em;
 	color: white;
-	background-color: black;
-	border: 1px green solid;
-	border-radius: 10px;
-	padding: 10px;
 }
 
 
-#resume_txt_box a:hover{
+
+@media(max-width: 980px){
+	#resume_txt_box{
+		font-size: 1.2em;
+
+	}
 
 }
 
-
-@media(max-width: 780px){
+@media(max-width: 840px){
 	#flex_container{
 		flex-direction: column;
 	}
+	#resume_img_box img{
+		max-width: 100%;
+		height: auto;
+	}
 
-	#resume_text{
-		padding: 40px;
+	#resume_txt_box{
+		margin: 0;
+		text-align: center;
+		line-height: 1.5;
+		font-size: 1em;
+		max-width: 100%;
 	}
 }
