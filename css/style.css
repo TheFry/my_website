@@ -1,9 +1,13 @@
+
+
+
 body{
 	background-color: #0c0d12;
 	color: white;
 	font-size: 16px;
 	margin: 0;
 	font-family: sans-serif;
+	box-sizing: border-box;
 }
 
 
@@ -14,12 +18,15 @@ body{
 	overflow: hidden;
 }
 
-
 #main_header{
 	text-align: center;
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
+	background-image: url("../images/poly.jpg" );
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 
@@ -30,18 +37,13 @@ body{
 }
 
 
-#resume_img_box{
-	border: 1px green solid;
-}
-
-
 #resume_img_box img{
+	max-width: 100%;
 	max-height: 100vh;
 }
 
 
-#resume_txt_box{
-	border: 1px green solid;
+#resume_txt_box{	
 	line-height: 3;
 	font-size: 2em;
 	margin-left: 10%;
@@ -54,17 +56,27 @@ body{
 }
 
 
-#resume_txt_box a{
-	text-decoration: none;
-	color: white;
+#resume_txt_box li{
+	text-align: center;
 }
 
 
+#resume_txt_box a{
+	text-decoration: none;
+	color: white;
+	padding: 0;
+}
+
+
+#download{
+	background-color: #2f2f9c;
+	border-radius: 25px;
+	padding: 0;
+}
 
 @media(max-width: 980px){
 	#resume_txt_box{
 		font-size: 1.2em;
-
 	}
 
 }
@@ -73,14 +85,9 @@ body{
 	#flex_container{
 		flex-direction: column;
 	}
-	#resume_img_box img{
-		max-width: 100%;
-		height: auto;
-	}
 
 	#resume_txt_box{
 		margin: 0;
-		text-align: center;
 		line-height: 1.5;
 		font-size: 1em;
 		max-width: 100%;
