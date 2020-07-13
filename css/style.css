@@ -34,6 +34,7 @@ body{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	min-height: 100vh;
 }
 
 
@@ -92,12 +93,18 @@ footer{
 @media(max-width: 840px){
 	#flex_container{
 		flex-direction: column;
+		min-height: 100vh;
 	}
 
 	#resume_txt_box{
-		margin: 0;
-		line-height: 1.5;
-		font-size: 1em;
+		margin: auto;
+		margin-top: 20px;
+		padding: 0;
 		max-width: 100%;
+		font-size: 1em;
+	}
+
+	#resume_img_box{
+		margin-top: 50px;
 	}
 }
