@@ -43,23 +43,23 @@ a{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-  }
+}
     
-  .landing::before{
+.landing::before{
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(5px);
 	background-color: rgba(0, 0, 0, .4);
   }
 
-  .landing .landing-content{
+.landing .landing-content{
 	z-index: 1;
-  }
+}
 
-  .landing .landing-content a{
-	  margin-top: 1.5rem;
-  }
+.landing .landing-content a{
+	margin-top: 1.5rem;
+}
